@@ -3,9 +3,11 @@ package project.pokemonmaster;
 import java.util.HashMap;
 
 //TODO: Implements an ENUM items (X)
-//TODO: Implements a BUY method ()
+//TODO: Implements a BUY method (X)
 //TODO: Implements a SELL method ()
 public class PokeMart {
+
+    HashMap itemHash = new HashMap<Enum, Integer>();
 
     private enum HealthItems {
         POTION_20_HP("potion", 20, 200),
@@ -76,6 +78,8 @@ public class PokeMart {
     }
 
     public void buyItem (Enum item, int amount) {
-
+        this.itemHash.put(item, amount);
     }
+
+
 }
