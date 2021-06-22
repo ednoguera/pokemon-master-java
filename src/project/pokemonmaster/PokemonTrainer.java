@@ -11,6 +11,7 @@ public class PokemonTrainer {
     //TODO: Create a capture system ()
     //TODO: Create a Pokemon class and remove the pokemon attibute on PokemonTrainer class ()
     //TODO: Create a System battle with other player ()
+    //TODO: Create a BUY/SELL system to interact with PokeMart
     //------------------------------------------------------------------------------
     //DONE:
     // Create a Bag class and associate it to the pokemon trainer
