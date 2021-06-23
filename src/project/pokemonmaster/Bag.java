@@ -3,32 +3,24 @@ package project.pokemonmaster;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/*TODO: Implement the bank features to get money
+* */
 public class Bag {
-    //TODO: Implements all the categories that bag will receive ()
-    private float money;
+
     private ArrayList insigniaList, itemList;
     //Dict implementation of pokeball
     private HashMap pokeballList = new HashMap<String, Float>();
 
     public void bag(
-        float money,
+//        float money,
         HashMap pokeballList,
         ArrayList insigniaList,
         ArrayList itemList
     ) {
-        this.money = money;
+//        this.money = money;
         this.pokeballList = pokeballList;
         this.insigniaList = insigniaList;
         this.itemList = itemList;
-    }
-
-    //GETTERS AND SETTERS | MODIFIERS
-    public void setMoney(float money){
-        this.money = money;
-    }
-
-    public float getMoney(){
-        return money;
     }
 
     public void setInsigniaList(ArrayList insigniaList) {
@@ -47,11 +39,6 @@ public class Bag {
         return itemList;
     }
     //END OF GETTERS AND SETTERS
-
-    public void buyPokeball(String itemName, float itemPrice){
-        this.money -= itemPrice;
-        this.pokeballList.put(itemName, itemPrice);
-    }
 
     public void usePokeball(String itemName) {
         this.pokeballList.remove(itemName);

@@ -36,4 +36,8 @@ public class Bank {
         this.totalFunds += amount;
     }
 
+    public float showAccountFunds () {
+        return this.totalFunds;
+    }
+
 }

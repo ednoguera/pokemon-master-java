@@ -6,20 +6,20 @@ public class Program {
 
         PokemonTrainer pokemonTrainer1 = new PokemonTrainer();
         PokemonTrainer pokemonTrainer2 = new PokemonTrainer();
+        PokeMart mart = new PokeMart();
+
+        //ENUMS
+        ShopHealthItems shopHealthItems;
+        ShopStatusItems shopStatusItems;
+        ShopPokeballs shopPokeballs;
 
         pokemonTrainer1.setName("Alice");
-//        pokemonTrainer2.setName("Ellinha");
 
-        pokemonTrainer1.bag.setMoney(3000);
-        pokemonTrainer1.bag.buyPokeball("pokeball", 300);
-        pokemonTrainer1.bag.buyPokeball("premierball", 150);
-        pokemonTrainer1.bag.buyPokeball("greatball", 500);
+        pokemonTrainer1.setMoney(15000);
+        pokemonTrainer1.getMoney();
 
-        pokemonTrainer1.capturePokemon("pokeball");
+        //POKEMART ZONE:==============================================
 
-//        pokemonTrainer2.bag.setPokeDollar(2000);
-
-        System.out.println(pokemonTrainer1.getTrainerResume());
-        System.out.println(pokemonTrainer2.getTrainerResume());
+        System.out.println(pokemonTrainer1.getTrainerSummary());
     }
 }
